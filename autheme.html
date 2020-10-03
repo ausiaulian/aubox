@@ -666,15 +666,12 @@
             }
         });
         var mainbody = document.getElementById("main-body");
-        var darkmod = 0;
+
         var pri_class = "mdui-theme-primary-" + primary_color;
         var acc_class = "mdui-theme-accent-" + accent_color;
         mainbody.classList.add(acc_class);
         mainbody.classList.add(pri_class);
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            mainbody.classList.add("mdui-theme-layout-dark");
-            darkmod = 1
-        }
+        mainbody.classList.add("mdui-theme-layout-dark");
 
         function login() {
             $$("content").write("")
