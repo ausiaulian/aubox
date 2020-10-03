@@ -167,10 +167,6 @@
         </a>
             <!--MultiDisksEnd-->
             <!--MultiDiskAreaEnd-->
-            <a href="https://github.com/qkqpttgf/OneManager-php" class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
-                <div class="mdui-list-item-content">Github</div>
-            </a>
         </div>
     </div>
 
@@ -266,17 +262,17 @@
         <div class="mdui-container-fluid">
             <form action="?admin" method="post">
                 <div class="mdui-dialog" id="login_input">
-                    <div class="mdui-dialog-title">登录</div>
+                    <div class="mdui-dialog-title">Login</div>
                     <div class="mdui-dialog-content">
                         <div class="mdui-textfield mdui-textfield-floating-label">
                             <i class="mdui-icon material-icons">lock</i>
-                            <label class="mdui-textfield-label">密码</label>
+                            <label class="mdui-textfield-label">Password</label>
                             <input class="mdui-textfield-input" type="password" />
                         </div>
                     </div>
                     <div class="mdui-dialog-actions">
-                        <button class="mdui-btn mdui-ripple" mdui-dialog-close>取消</button>
-                        <button class="mdui-btn mdui-ripple" type="submit">登录</button>
+                        <button class="mdui-btn mdui-ripple" mdui-dialog-close>Cancel</button>
+                        <button class="mdui-btn mdui-ripple" type="submit">Submit</button>
                     </div>
                 </div>
             </form>
@@ -671,7 +667,7 @@
         var acc_class = "mdui-theme-accent-" + accent_color;
         mainbody.classList.add(acc_class);
         mainbody.classList.add(pri_class);
-        mainbody.classList.add("mdui-theme-layout-dark");
+        mainbody.classList.remove("mdui-theme-layout-dark");
 
         function login() {
             $$("content").write("")
